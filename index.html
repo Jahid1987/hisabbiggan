@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="All students hate to bring like 
+    a tytanic book. ">
+    <title>Hisabbiggan.com</title>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" type="text/css" href="./css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./css/index.css">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- PWA Settings  -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS support -->
+    <link rel="apple-touch-icon" href="/img//icons/icon-96x96.png">
+    <meta name="apple-movile-web-app-status-bar" content="#FCB43A">
+    <meta name="theme-color" content="#FFE1C4">
+    
+    <!-- Firebase services  -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    
+</head>
+<body>
+
+<!-- Horizontal Scrollable Menu  -->
+  <div class="scrollmenu">
+    <a class="active" href="./acc1/chapter1.html">Chap-1</a>
+    <a href="#chap-2">Chap-2</a>
+    <a href="#chap-3">chap-3</a>
+    <a href="#chap-4">chap-4</a>
+    <a href="#chap-5">chap-5</a>
+    <a href="#chap-6">chap-6</a>
+  </div>
+  
+  <!-- main content of the page  -->
+  <main>
+    <!-- main content will go here -->
+  </main>
+  
+  <!-- Bottom nav bar like mobile  -->
+  <div class="bottom">
+    <nav>
+      <ul>
+        <li class="active">
+          <i class="fas fa-home"></i>
+          <p>Home</p>
+        </li>
+        <li>
+          <i class="fas fa-book-open"></i>
+          <p>H.W.</p>
+        </li>
+        <li>
+          <i class="fas fa-bell"></i>
+          <p>Notice</p>
+        </li>
+        <li>
+          <i class="fas fa-user"></i>
+          <p onclick="openLoginForm()" class="login" style="display: none;">Login</p>
+          <p onclick="openUserProfile()" class="profile" style="display: none;">Profile</p>
+        </li>
+      </ul>
+    </nav>
+  </div>
+<!-- Sign up form  -->
+<div class="form-popup" id="singupForm">
+  <form id="createUser" class="form-container">
+    <h1>Sign Up</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit" class="btn">Sign Up</button>
+    <button type="button" class="btn cancel" onclick="closeSignupForm()">Close</button>
+    <p>Already registered? 
+      <span onclick="openLoginForm()" style="text-decoration: underline; color: var(--secondary);">Login here</span>
+    </p>
+  </form>
+</div>
+
+<!-- Login form  -->
+  <div class="form-popup" id="loginForm">
+    <form id="loginUser" class="form-container">
+      <h1>Login</h1>
+
+      <label for="email"><b>Email</b></label>
+      <input type="email" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit" class="btn">Login</button>
+      <button type="button" class="btn cancel" onclick="closeLoginForm()">Close</button>
+      <p>Not registered? 
+        <span onclick="openSignupForm()" style="text-decoration: underline; color: var(--secondary);">Sign Up here</span>
+      </p>
+    </form>
+  </div>
+<!-- User Profile  -->
+<div class="form-popup" id="userProfile">
+  <form id="logOutUser" class="form-container">
+    <h1>User Profile</h1>
+
+    <button type="submit" class="btn">Log Out</button>
+    <button type="button" class="btn cancel" onclick="closeUserProfile()">Close</button>
+  </form>
+</div>
+  
+
+    <script src="/js/app.js"></script>
+    <script type="module" src="./js/auth.js"></script>
+    <script src="/js/index.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="All students hate to bring like 
+    a tytanic book. ">
+    <title>crud</title>
+
+    <!-- CSS  -->
+    
+    <!-- PWA Settings  -->
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS support -->
+    <link rel="apple-touch-icon" href="/img//icons/icon-96x96.png">
+    <meta name="apple-movile-web-app-status-bar" content="#FCB43A">
+    <meta name="theme-color" content="#FFE1C4">
+    
+    <!-- Firebase services  -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-storage.js"></script>
+    
+    <!-- tinyMCE -->
+    <script src="https://cdn.tiny.cloud/1/hwm3uae0nil89eqqc8cdkasz1db24fy4cqywpb6v0uc474mz/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
+</head>
+
+<body>
+    <!-- tinyMCE -->
+    <form id="myForm">
+        <label for="subjects">Choose Subjects</label>
+        <select name="subject" id="subjects">
+            <option value="Accounting 1">Accounting 1</option>
+            <option value="Accounting 2">Accounting 2</option>
+        </select><br><br>
+        <label for="chapter">Choose chapter</label>
+        <select name="chapter" id="chapter">
+            <option value="chapter 1">chapter 1</option>
+            <option value="chapter 2">chapter 2</option>
+            <option value="chapter 3">chapter 3</option>
+            <option value="chapter 4">chapter 4</option>
+            <option value="chapter 5">chapter 5</option>
+            <option value="chapter 6">chapter 6</option>
+            <option value="chapter 7">chapter 7</option>
+            <option value="chapter 8">chapter 8</option>
+            <option value="chapter 9">chapter 9</option>
+            <option value="chapter 10">chapter 10</option>
+        </select><br><br>
+        <input type="text" name="topic" aria-label="name" placeholder="Topic"><br>
+        <textarea id="myTextarea">
+
+        </textarea>
+        <input type="text" id="name" aria-label="name">
+        <button type="submit">Submit</button>
+    </form>
+    
+      <section id="tinyMceContent">
+    
+      </section>
+
+    <script src="/js/app.js"></script>
+    <script type="module" src="/js/main.js"></script>
+
+<!-- tinyMCE -->
+<script type="module">
+
+    // Firebase firestore
+    import { timestamp } from '../js/firebase/appConfig.js'
+    import useCollection from '../js/firebase/useCollection.js'
+    const { addDoc } = useCollection('topics')
+    
+
+    // Initialising the tinyMCE
+    tinymce.init({
+      selector: '#myTextarea',
+      plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+      toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+    });
+
+    // Hnadling the value of tineMCE
+    window.addEventListener('load', () => {
+        const form = document.querySelector('#myForm')
+        const content = document.querySelector('#tinyMceContent')
+
+        form.addEventListener('submit',async event => {
+        event.preventDefault();
+
+        
+        let doc = {
+            "createdAt": timestamp(),
+            "subject": form.subject.value,
+            "chapter": form.chapter.value,
+            "topic": form.topic.value,
+            "contect": tinymce.get("myTextarea").getContent(),
+        }
+
+        await addDoc(doc)
+        console.log(tinymce.get("myTextarea").getContent())
+        content.innerHTML = tinymce.get("myTextarea").getContent()
+        form.reset();
+        })
+    })
+  </script>
+    
+</body>
+</html>

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>হিসাব খাত, হিসাবের শ্রেণী, হিসাব সমীকরণ ৫ মিনিটে!</title>
+    <meta
+      name="description"
+      content="অধ্যায়-১ঃ লেনদেন নির্ণয়, হিসাব খাত নির্ণয়, হিসাবের শ্রেণী নির্ণয়, হিসাব সমীকরণে প্রভাব নির্ণয়/টেবুলার ছকে লেনদেনের প্রভাব দেখানো/টেবুলার শিটে লেনদেনের প্রভাব দেখানো।"
+    />
+    <!-- google font link  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css desing  -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/chapter.css" />
+    <link rel="stylesheet" type="text/css" href="../css/nav.css" />
+
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- PWA Settings  -->
+    <link rel="manifest" href="/manifest.json" />
+    <!-- PWA IOS support -->
+    <link rel="apple-touch-icon" href="/img//icons/icon-96x96.png" />
+    <meta name="apple-movile-web-app-status-bar" content="#FCB43A" />
+    <meta name="theme-color" content="#FFE1C4" />
+  </head>
+  <body>
+    <!-- top nav -->
+    <div class="top-nav" onclick="controllTopNav(event)">
+      <a href="../index.html">Creative Care</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    </div>
+
+    <!-- sub top nav  -->
+    <div class="sub-top-nav" id="subnav">
+      <a id="first-item-subnav" href="../ict.html">ICT</a>
+      <a href="../english.html">English</a>
+      <a href="../accounting.html">Accounting</a>
+      <a href="../hw.html">HW</a>
+    </div>
+
+    <!-- side bar  -->
+    <!-- side menu btn  -->
+    <div class="menubtn" onclick="controllSidepanel(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <!-- side panel  -->
+    <div id="mySidepanel" class="sidepanel">
+      <h2>হিসাববিজ্ঞান ১ম পত্র</h2>
+      <a href="./chapter1.html">হিসাববিজ্ঞান পরিচিতি </a>
+      <a href="./chapter2.html">হিসাবের বইসমূহ</a>
+      <a href="./chapter4.html">রেওয়ামিল</a>
+    </div>
+
+    <!-- mai content starts from here  -->
+    <main>
+      <section>
+        <h1>অধ্যায় - ১ঃ হিসাববিজ্ঞান পরিচিতি</h1>
+
+        <div class="basic">
+          <div class="content">
+            <h2>মৌলিক তথ্য</h2>
+            <p>আলোচ্য বিষয়সমূহ -</p>
+            <ul>
+              <li><a href="#লেনদেন_নির্ণয়">লেনদেন নির্ণয়</a></li>
+              <li><a href="#হিসাব_খাত_নির্ণয়">হিসাব খাত নির্ণয়</a></li>
+              <li>
+                <a href="#হিসাবের_শ্রেণী_নির্ণয়">হিসাবের শ্রেণী নির্ণয়</a>
+              </li>
+              <li>
+                <a href="#হিসাব_সমীকরণে_লেনদেনের_প্রভাব "
+                  >হিসাব সমীকরণে লেনদেনের প্রভাব
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <article id="লেনদেন_নির্ণয়">
+          <h2>লেনদেন নির্ণয়</h2>
+          <p>
+            ব্যবসায়ের মধ্যে অনেক ঘটনা ঘটে সব ঘটনাই লেনদেন না। লেনদেন হতে হলে
+            ঘটনাটির ফলে আর্থিক অবস্থার পরিবর্তন অবশ্যই হতে হবে।
+          </p>
+          <div class="example">
+            <div class="text">
+              <p>
+                যেমনঃ ১০,০০০ টাকা মাসিক বেতনে একজন ম্যানেজার নিয়োগ দিলে সেটা
+                ঘটনা কিন্তু এখনো লেনদেন নয়। কারণ নিয়োগ দিলেই টাকা দিতে হচ্ছে না।
+                কিন্তু মাস শেষে ম্যানেজারকে ১০,০০০ টাকা বেতন দেওয়া হলো। এটি একটি
+                লেনদেন কারণ এর ফলে ব্যবসায়ের আর্থিক অবস্থার পরিবর্তন হয়েছে।
+              </p>
+            </div>
+            <div class="call_to_action">
+              <a class="button" href="exercise.html?search=users">
+                More examples
+              </a>
+
+              <a class="button" href="mcq.html?search=mcq"> MCQ </a>
+            </div>
+          </div>
+        </article>
+
+        <article id="হিসাব_খাত_নির্ণয়">
+          <h2>হিসাব খাত নির্ণয়</h2>
+          <p>
+            প্রতিটি লেনদেনর মধ্যেই কমপক্ষে ২টি হিসাব খাত থাকবেই। সবার আগে
+            লেনদেনের সাথে কি কি হিসাব জড়িত তা নির্ণয় করতে হবে।
+          </p>
+
+          <div class="example">
+            <div class="text">
+              <p>
+                যেমনঃ জনাব জিহাদ নগদ ১,০০,০০০ টাকা এবং ৫০,০০০ টাকার আসবাবপত্র
+                নিয়ে ব্যবসায় শুরু করেন। এখানে জড়িত হিসাব খাতগুলো হলো -
+              </p>
+              <p>নগদান হিসাব ১,০০,০০০ টাকা</p>
+              <p>আসবাবপত্র হিসাব ৫০,০০০ টাকা</p>
+              <p>মূলধন হিসাব ১,৫০,০০০ টাকা</p>
+            </div>
+
+            <div class="call_to_action">
+              <a class="button" href="exercise.html?search=users">
+                More examples
+              </a>
+
+              <a class="button" href="mcq.html?search=mcq"> MCQ </a>
+            </div>
+          </div>
+        </article>
+
+        <article id="হিসাবের_শ্রেণী_নির্ণয়">
+          <h2>হিসাবের শ্রেণী নির্ণয়</h2>
+          <p>
+            আধুনিক পদ্ধতিতে বা হিসাব সমীকরণ পদ্ধতিতে মৌলিক হিসাবের শ্রেণীগুলো
+            হলো - সম্পদ, দায়, মালিকানা স্বত্ব হিসাব। মালিকানা স্বত্ব আবার চারটি
+            বিষয় দ্বারা প্রভাবিত। যেমনঃ মূলধন, উত্তোলন, আয় এবং ব্যয়।
+          </p>
+          <div class="example">
+            <div class="text">
+              <p>
+                যেমনঃ জনাব জিহাদ নগদ ১,০০,০০০ টাকা এবং ৫০,০০০ টাকার আসবাবপত্র
+                নিয়ে ব্যবসায় শুরু করেন। এখানে জড়িত হিসাবের শ্রেণীগুলো হলো -
+              </p>
+              <p>নগদান হিসাব ১,০০,০০০ টাকা (সম্পদ হিসাব)</p>
+              <p>আসবাবপত্র হিসাব ৫০,০০০ টাকা (সম্পদ হিসাব)</p>
+              <p>
+                মূলধন হিসাব ১,৫০,০০০ টাকা (মূলধন হিসাব বা মালিকানা স্বত্ব হিসাব)
+              </p>
+            </div>
+            <div class="call_to_action">
+              <a class="button" href="exercise.html?search=users">
+                More examples
+              </a>
+
+              <a class="button" href="mcq.html?search=mcq"> MCQ </a>
+            </div>
+          </div>
+        </article>
+        <article id="হিসাব_সমীকরণে_লেনদেনের_প্রভাব">
+          <h2>হিসাব সমীকরণে লেনদেনের প্রভাব</h2>
+          <p>প্রভাব বুঝার আগে সমীকরণ বুঝতে হবে।</p>
+          <div class="basic">
+            <p>মৌলিক সমীকরণটি হলো:</p>
+            <p>⇒ সম্পদ = দায় + মালিকানা স্বত্ব</p>
+            <p>⇒ Assets = Liabilities + Owner’s Equity</p>
+            <p>বিস্তারিত সমীকরণটি হলো</p>
+            <p>⇒ সম্পদ = দায় + মালিকনা স্বত্ব (+মুলধন + আয় - ব্যয় - উত্তোলন)</p>
+            <p>
+              ⇒ Assets = Liabilities + Owner’s Equity (+Capital + Revenue -
+              Expense - Drawings)
+            </p>
+          </div>
+
+          <p>
+            এখন আমরা দেখব সমীকরণের উপর লেনদেনের প্রভাব আসলে বিষয়টি কি? তার আগে
+            একটি বিষয় পরিষ্কার হওয়া দরকার। আমরা, যারা হিসাববিজ্ঞান শিখছি, কার
+            জন্য হিসাব রাখব? মালিক নাকি মালিকের ব্যবসায়? উত্তর হচ্ছে মালিকের
+            ব্যবসায়ের জন্য। তার মানে ব্যবসায় এবং মালিক আলাদা বিষয়? হ্যাঁ ঠিক
+            তাই, ব্যবসায় এবং মালিক আলাদা বিষয়। তাই মালিক ব্যবসায়কে কিছু দিলে
+            সেটাকে দায় হিসাবে লিখে রাখতে হবে। কি? ঘোলাটে লাগছে? চলো নিচের
+            উদাহরণটি দেখি -
+          </p>
+
+          <div class="example">
+            <div class="text">
+              <p>
+                আমাদের সেই পুরনো লেনদেনঃ জনাব জিহাদ নগদ ১,০০,০০০ টাকা এবং ৫০,০০০
+                টাকার আসবাবপত্র নিয়ে ব্যবসায় শুরু করেন।
+              </p>
+              <p>
+                এখানে, জিহাদ নগদ টাকা এবং আসবাবপত্র ব্যবসায়কে দিয়েছেন এখানে
+                ব্যবসায়ের দিক থেকে ভাবলে ব্যবসায়ের নগদ টাকা বৃদ্ধি পেয়েছে এবং
+                আসবাবপত্র বৃদ্ধি পেয়েছে এই দুইটা পরিষ্কার। তাইনা? অপরদিকে যেহেতু
+                মালিক দিয়েছে তাহলে ব্যবসায়ের কাছে মালিক এখন মোট ১,৫০,০০০ টাকা
+                দাবি করবে যাকে মালিকের দাবি/মালিকানা স্বত্ব বলা হয়। আর এই
+                ব্যপারটাকে সমীকরণে দেখানোকেই বলে প্রভাব দেখানো -
+              </p>
+              <table>
+                <colgroup>
+                  <col width="52" />
+                  <col width="227" />
+                  <col width="215" />
+                  <col width="130" />
+                </colgroup>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p dir="ltr">তারিখ</p>
+                    </td>
+                    <td>
+                      <p dir="ltr">হিসাব খাত</p>
+                    </td>
+                    <td>
+                      <p dir="ltr">হিসাবের শ্রেণী</p>
+                    </td>
+                    <td>
+                      <p dir="ltr">সমীকরণে প্রভাব</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>
+                      <p dir="ltr">নগদান হিসাব ১,০০,০০০ টাকা</p>
+                      <p dir="ltr">আসবাবপত্র হিসাব ৫০,০০০ টাকা</p>
+                      <p dir="ltr">মূলধন হিসাব ১,৫০,০০০ টাকা</p>
+                    </td>
+                    <td>
+                      <p dir="ltr">সম্পদ হিসাব</p>
+                      <p dir="ltr">সম্পদ হিসাব</p>
+                      <p dir="ltr">মূলধন হিসাব বা মালিকানা স্বত্ব হিসাব</p>
+                    </td>
+                    <td>
+                      <p dir="ltr">সম্পদ/A বৃদ্ধি</p>
+                      <p dir="ltr">সম্পদ/A বৃদ্ধি</p>
+                      <p dir="ltr">মালিকানা স্বত্ব/OE বৃদ্ধি</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="call_to_action">
+              <a class="button" href="exercise.html?search=users">
+                More examples
+              </a>
+
+              <a class="button" href="mcq.html?search=mcq"> MCQ </a>
+            </div>
+          </div>
+
+          <p>
+            সমীকরণে লেনদেনের প্রভাব দেখাতে যেয়ে সবচেয়ে বেশি সমস্যা হয় মালিকানা
+            স্বত্ব নিয়ে। মালিকানা স্বত্ব পরিবর্তিত হয় মোট চারটি বিষয় দ্বারা।
+            মূলধন, আয়, ব্যয় এবং উত্তোলন। মূলধন ও আয় মালিকের দাবি/স্বত্ব বাড়ায়।
+            অপরদিকে, উত্তোলন ও ব্যয় মালিকের দাবি/স্বত্ব কমায়। কিভাবে?
+          </p>
+
+          <p>
+            দেখ, আমরা হিসাব করি ব্যবসায়ের জন্য মালিকের জন্য নয়। তাইনা? আর
+            ব্যবসায়ে মূলধন দেয় মালিক, আবার প্রয়োজনে সে টাকা উঠিয়েও নিয়ে যায়। খুব
+            সহজেই বুঝা যায় যে মূলধন দিলে ব্যবসায়ে মালিকের দাবি/স্বত্ব বাড়ে।
+            অপরদিকে ব্যবসায় থেকে টাকা উঠিয়ে নিয়ে গেলে তার দাবি/স্বত্ব কমে।
+            কিন্তু আয়/ব্যয়? হ্যাঁ, আয়/ব্যয় এর দাবিদারও মালিক। তাহলে ব্যবসায় যদি
+            লাভ করে সেই টাকার দাবীদার কে? ঠিক ধরেছ, মালিক। আবার ব্যবসায় যদি ব্যয়
+            করে সেই টাকা কার কাছ থেকে কাটা যাবে? উত্তর হচ্ছে - মালিক। তার মানে
+            হলো - আয় হলে মালিকানা স্বত্ব বাড়ে। অপরদিকে, ব্যয় হলে - মালিকানা
+            স্বত্ব কমে। বুম!!!!!
+          </p>
+
+          <div class="tip">
+            <h2>Tip!</h2>
+            <p>
+              এই চারটি বিষয়ের জ্ঞান। যেমনঃ লেনদেন নির্ণয় ⇒ হিসাব খাত নির্ণয় ⇒
+              হিসাবের শ্রেণী নির্ণয় ⇒ হিসাব সমীকরণে লেনদেনের প্রভাব নিয়েই এই
+              চ্যাপ্টারের অংকে দক্ষতা নিয়ে আসো এবার। মনে রাখবা জ্ঞান এর সাথে
+              অনুশীলন যুক্ত হলেই দক্ষতা আসে। তাই, অনুশীলনের বিকল্প নেই। আর
+              অনুশীলনের জন্য বোর্ডের প্রশ্নের চেয়ে ভালো জিনিস আর নেই।
+            </p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <script defer src="/js/nav.js"></script>
+    <script src="../js/sidepanel.js"></script>
+  </body>
+</html>

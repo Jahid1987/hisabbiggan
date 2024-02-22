@@ -1,0 +1,80 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@100..900&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Noto Serif Bengali", serif;
+  /* font-family: "Poppins", sans-serif; */
+}
+/* rest css end  */
+
+/* Common design in every page  */
+
+:root {
+  --primary: #1f4a23;
+  --primarybg: #b1deb5;
+  --secondary: #3c8f43;
+  --secondarybg: #f0f8f1;
+  --important: #fcb43a;
+  --importantbg: #fcf5e8;
+  --warning: #992409;
+  --warningbg: #fff3f1;
+}
+h1 {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+h2 {
+  font-size: 1em;
+  font-weight: 600;
+}
+p {
+  font-size: .9rem;
+  line-height: normal;
+}
+main {
+  padding: 5px;
+}
+section {
+  padding-top: 60px;
+  margin: 15px 0;
+}
+article {
+  padding-top: 70px;
+}
+b {
+  font-weight: bold;
+}
+ul {
+  list-style-type: disc;
+  font-size: 0.8em;
+}
+/* Base styles for the button */
+.button {
+  padding: 6px 14px;
+  font-size: 1em;
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Media query for responsiveness */
+/* @media (max-width: 600px) {
+            .button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        } */
+
+/* Hover effect */
+.button:hover {
+  background-color: var(--secondary);
+}

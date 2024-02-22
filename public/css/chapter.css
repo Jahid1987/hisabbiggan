@@ -1,0 +1,87 @@
+/* This is for each chapter */
+
+.basic {
+  background: var(--secondarybg);
+  padding: 0px 5px 5px 15px;
+  position: relative;
+}
+.basic p {
+  text-indent: 0px;
+}
+.basic ul {
+  padding-left: 25px;
+  text-decoration: underline;
+  line-height: 1;
+}
+.basic ul li {
+  padding: 10px 0;
+}
+.basic video {
+  display: none;
+}
+.tutorial {
+  padding-top: 10px;
+  width: 100%;
+  height: auto;
+}
+.example {
+  background: var(--secondarybg);
+  border-left: 3px solid var(--secondary);
+  padding: 0px 5px 5px 15px;
+  line-height: 1.5;
+  margin: 10px 0;
+}
+.example div {
+  padding: 10px 0;
+}
+.example .text p {
+  text-indent: 0px;
+  padding: 1px 0;
+}
+.example .call_to_action {
+  display: flex;
+  justify-content: space-between;
+}
+.example table,
+tr,
+td {
+  border: 1px solid black;
+}
+.more-example {
+  background: var(--secondarybg);
+}
+.important {
+  background: var(--importantbg);
+  padding: 0px 5px 5px 15px;
+  border-left: 3px solid var(--important);
+  line-height: 1.5;
+}
+.important p {
+  text-indent: 0px;
+  padding: 1px 0;
+}
+.important h2 {
+  color: #fd713e;
+}
+.tip {
+  background: var(--primarybg);
+  padding: 0px 5px 5px 15px;
+  border-left: 3px solid var(--primary);
+  line-height: 1.5;
+}
+.tip h2 {
+  color: #fd713e;
+}
+.tip p {
+  text-indent: 0px;
+  padding: 1px 0;
+}
+
+/* Mobile approach  */
+@media (min-width: 460px) {
+  .basic video {
+    position: absolute;
+    top: 19px;
+    right: 0px;
+  }
+}
