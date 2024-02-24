@@ -46,13 +46,7 @@ section {
 article {
   padding-top: 70px;
 }
-b {
-  font-weight: bold;
-}
-ul {
-  list-style-type: disc;
-  font-size: 0.8em;
-}
+
 /* Base styles for the button */
 .button {
   padding: 6px 14px;

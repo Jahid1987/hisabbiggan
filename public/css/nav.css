@@ -29,6 +29,7 @@
   gap: 10px;
   font-size: .9rem;
   font-weight: 500;
+  cursor: pointer;
 }
 /* sub top nav  */
 .sub-top-nav {
@@ -112,7 +113,7 @@
 /* The sidepanel links */
 .sidepanel h2 {
   color: #f1f1f1ee;
-  margin-top: 10px;
+  margin: 10px 0;
 }
 .sidepanel a {
   padding: 5px;
@@ -122,12 +123,14 @@
   color: #f1f1f1c4;
   display: block;
   transition: 300ms;
+  border-bottom: 1px solid #f1f1f15d;
+  width: 90%;
 }
 
 /* When you mouse over the navigation links, change their color */
 .sidepanel a:hover {
-  background-color: var(--secondary);
-  color: black;
+  background-color: #1f4a238f;
+  color: #f1f1f1c4;
 }
 
 /* Current/active all links */
