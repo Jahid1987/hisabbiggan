@@ -72,28 +72,36 @@
   </head>
   <body>
     <!-- top nav -->
-    <div class="top-nav" >
-      <a href="/">Creative Care</a>
-      <a href="#"
-        ><i class="fa fa-fw fa-user"></i>
-        <span onclick="openLoginForm()" class="login" style="display: none"
-          >Login</span
-        >
-        <span onclick="openUserProfile()" class="profile" style="display: none"
-          >Profile</span
-        >
-      </a>
-      <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
+    <div class="top-nav-container">
+      <div class="top-nav">
+        <a href="/" class="brand-name">Creative Care</a>
+        <div class="nav-links">
+          <a
+            ><i class="fa fa-fw fa-user"></i>
+            <span onclick="openLoginForm()" class="login" style="display: none"
+              >Login</span
+            >
+            <span
+              onclick="openUserProfile()"
+              class="profile"
+              style="display: none"
+              >Profile</span
+            >
+          </a>
+          <a><i class="fa fa-fw fa-envelope"></i> Contact</a>
+        </div>
+      </div>
     </div>
 
     <!-- sub top nav  -->
-    <div class="sub-top-nav" id="subnav">
+    <div class="sub-top-nav">
       <a href="./ict.html">ICT</a>
       <a href="./english.html">English</a>
       <a href="./accounting1.html">Accounting-1</a>
       <a href="./accounting2.html">Accounting-2</a>
       <a href="./hw.html">HW</a>
     </div>
+    
     <!-- Sliders  -->
     <!-- Slideshow container -->
     <div class="slideshow-container">

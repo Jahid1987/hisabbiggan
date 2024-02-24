@@ -1,50 +1,55 @@
 /* Style the top navigation bar */
-.top-nav {
+.top-nav-container{
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: #fdfdfd;
-  overflow: auto;
+  padding: 5px;
   z-index: 2;
+  background: #fff;
 }
-
+.top-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-nav .brand-name{
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(to right,#1f4a23, #992409);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 /* top-nav links */
-.top-nav a {
-  float: right;
-  text-align: center;
-  padding: 6px;
-  color: black;
-  text-decoration: none;
-  font-size: 0.9em;
+.top-nav .nav-links{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  font-size: .9rem;
+  font-weight: 500;
 }
-.top-nav a:first-child {
-  float: left;
-  color: black;
-  font-size: 1em;
-  font-weight: bold;
-}
-/* top-nav links on mouse-over */
-/* .top-nav a:hover {
-  background-color: var(--primarybg);
-} */
-
+/* sub top nav  */
 .sub-top-nav {
   position: fixed;
   top: 36px;
-  background-color: #282a35;
+  background-color: #404144;
   overflow: auto;
   white-space: nowrap;
   width: 100%;
   z-index: 2;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-size: .9rem;
+  font-weight: 400;
 }
 .sub-top-nav::-webkit-scrollbar {
   display: none;
 }
 .sub-top-nav a {
   display: inline-block;
-  color: #f1f1f1;
+  color: #f1f1f1c4;
   text-align: center;
   padding: 2px 8px;
   text-decoration: none;
@@ -59,8 +64,9 @@
   top: 36px;
   cursor: pointer;
   z-index: 3;
-  background-color: #363636;
-  padding: 3px 0;
+  outline: none;
+  background-color: #352323;
+  padding: 1px 0;
 }
 
 .bar1,
@@ -91,16 +97,21 @@
   width: 0;
   position: fixed;
   z-index: 1;
-  top: 64px;
+  top: 61px;
   left: 0;
-  background-color: #363636;
+  background-color: #404144;
+  font-size: .9rem;
+  font-weight: 400;
+  color: #f1f1f1c4;
   overflow-x: hidden;
-  /* transition: 0.5s; */
+  transition: 200ms;
 }
-
+.sidepanel .sidepanel-content{
+  padding-left: 10px;
+}
 /* The sidepanel links */
 .sidepanel h2 {
-  color: #f1f1f1;
+  color: #f1f1f1ee;
   margin-top: 10px;
 }
 .sidepanel a {
@@ -108,9 +119,9 @@
   padding-left: 10px;
   text-decoration: none;
   font-size: 1em;
-  color: #f1f1f1;
+  color: #f1f1f1c4;
   display: block;
-  /* transition: 0.3s; */
+  transition: 300ms;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -122,46 +133,6 @@
 /* Current/active all links */
 .active {
   background-color: var(--secondary);
-}
-
-/* Bottom navigation like mobile */
-
-nav {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  margin-top: -5px;
-  width: 100%;
-}
-
-nav ul {
-  background-color: #eeeeee;
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  height: 60px;
-}
-
-nav li {
-  color: #777;
-  cursor: pointer;
-  flex: 1;
-  padding: 5px;
-  text-align: center;
-}
-nav ul li i {
-  padding: 0 0 0 12px;
-}
-
-nav ul li p {
-  font-size: 12px;
-  margin: 2px 0;
-}
-
-nav ul li:hover,
-nav ul li.active {
-  color: white;
 }
 
 /* Login form  */

@@ -11,6 +11,7 @@
 
     <!-- css desing  -->
     <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/chapter.css" />
 
     <!-- PWA Settings  -->
@@ -21,6 +22,27 @@
     <meta name="theme-color" content="#FFE1C4" />
   </head>
   <body>
+        <!-- top nav -->
+        <div class="top-nav-container">
+          <div class="top-nav">
+            <a href="/" class="brand-name">Creative Care</a>
+            <div class="nav-links">
+              <a
+                ><i class="fa fa-fw fa-user"></i>
+                <span onclick="openLoginForm()" class="login" style="display: none"
+                  >Login</span
+                >
+                <span
+                  onclick="openUserProfile()"
+                  class="profile"
+                  style="display: none"
+                  >Profile</span
+                >
+              </a>
+              <a><i class="fa fa-fw fa-envelope"></i> Contact</a>
+            </div>
+          </div>
+        </div>
     <main>
       <section>
         <h1>অধ্যায় - ৪ঃ রেওয়ামিল</h1>
