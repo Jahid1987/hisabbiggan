@@ -50,6 +50,10 @@
   text-indent: 0px;
   padding: 1px 0;
 }
+.example .table-container{
+  overflow-x: auto;
+  white-space: nowrap;
+}
 .example .call_to_action {
   display: flex;
   justify-content: space-between;
